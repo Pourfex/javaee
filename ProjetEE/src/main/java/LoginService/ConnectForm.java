@@ -1,5 +1,7 @@
 package LoginService;
 
+import MiddleWares.DatabaseMiddleWare;
+
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
@@ -8,6 +10,7 @@ public class ConnectForm {
 
     private static final String CHAMP_USERNAME  = "username";
     private static final String CHAMP_PASSWORD   = "password";
+    private static final String CHAMP_INCORRECT   = "incorrect";
 
 
     private Map<String, String> errors = new HashMap<String, String>();
@@ -36,12 +39,11 @@ public class ConnectForm {
         }
         user.setPassword( password );
 
-        boolean correct=true;
+        boolean correct=false;
         try {
             correct = userInDb( user);
         } catch ( Exception e ) {
-            setErreur( CHAMP_USERNAME, e.getMessage() );
-            setErreur( CHAMP_PASSWORD, e.getMessage() );
+            setErreur( CHAMP_INCORRECT, e.getMessage() );
         }
 
         user.setCorrect(correct);
@@ -49,8 +51,16 @@ public class ConnectForm {
         return user;
     }
 
-    private boolean userInDb(User user) {
-        return true;
+    private boolean userInDb(User user) throws Exception {
+
+
+        DatabaseMiddleWare databaseMiddleWare = new DatabaseMiddleWare();
+
+        if(databaseMiddleWare.userInDb(user.getUsername(), user.getPassword())){
+            return true;
+        }else{
+            throw new Exception( "Identifiants incorrects" );
+        }
     }
 
     private void validateUsername( String username ) throws Exception {

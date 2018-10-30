@@ -7,10 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a85b959-adf0-4217-9d86-822da544126e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ProjetEE_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ProjetEE_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/servlets/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlets/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetEE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetEE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Capteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LoginService/ConnectForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LoginService/ConnectForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LoginService/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LoginService/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/MiddleWares/DatabaseMiddleWare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/MiddleWares/DatabaseMiddleWare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginService/ConnectForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginService/ConnectForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginService/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginService/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MiddleWares/DatabaseMiddleWare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MiddleWares/DatabaseMiddleWare.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,36 +113,41 @@
     <session id="-1447031520">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
-          <entry key="jsp" value="2" />
-          <entry key="xml" value="1" />
+          <entry key="class" value="1" />
+          <entry key="java" value="21" />
+          <entry key="jsp" value="5" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
-          <entry key="JSP" value="2" />
-          <entry key="XML" value="1" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="21" />
+          <entry key="JSP" value="5" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="java" value="701" />
-          <entry key="jsp" value="112" />
+          <entry key="java" value="2495" />
+          <entry key="jsp" value="493" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="701" />
-          <entry key="JSP" value="112" />
+          <entry key="JAVA" value="2495" />
+          <entry key="JSP" value="493" />
           <entry key="PLAIN_TEXT" value="7" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -138,99 +155,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/LoginService/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-              <folding>
-                <element signature="e#193#194#0" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#135#136#0" expanded="true" />
-                <element signature="e#166#167#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#351#367#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-                <element signature="e#1428#1429#0" expanded="true" />
-                <element signature="e#2370#2371#0" expanded="true" />
-                <element signature="e#2415#2416#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="340">
+              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            <state relative-caret-position="425">
+              <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LogoutService/LogoutServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="11" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UserServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="106" column="61" lean-forward="true" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="61" />
+            <state relative-caret-position="136">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -239,10 +188,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="20" />
+            <state relative-caret-position="357">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="25" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -253,8 +202,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -270,7 +220,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/WEB-INF/test_respond.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Model/VilleEntity.java" />
@@ -285,15 +234,21 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/UserServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java" />
         <option value="$PROJECT_DIR$/src/main/java/LoginService/InscriptionForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/LoginService/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/LoginService/LoginServlet2.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Capteur2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/CapteurData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/CapteurDataType.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/IdentifiantEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LogoutService/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" />
       </list>
     </option>
   </component>
@@ -326,6 +281,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -380,14 +336,6 @@
               <item name="ProjetEE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjetEE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjetEE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -421,7 +369,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -431,7 +378,7 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="3eaa38ef-cc79-4e1f-9f04-dd3d3edbc3ce" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540388564923" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540918601853" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -443,6 +390,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Model" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="Model" />
     </key>
@@ -454,8 +404,8 @@
       <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\web\WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="servlets" />
       <recent name="Model" />
+      <recent name="servlets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\src\main\webapp" />
@@ -645,18 +595,19 @@
       <workItem from="1539869333791" duration="9077000" />
       <workItem from="1539929516630" duration="6236000" />
       <workItem from="1540380909733" duration="259000" />
-      <workItem from="1540382281967" duration="5971000" />
+      <workItem from="1540382281967" duration="12206000" />
+      <workItem from="1540917568956" duration="1024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40710000" />
+    <option name="totallyTimeSpent" value="47969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -668,7 +619,7 @@
       <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -821,10 +772,38 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/test2.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/VilleEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UserServlet2.java" />
+    <entry file="file://$PROJECT_DIR$/ProjetEE.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state>
+          <caret selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurdataEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1145">
+          <caret line="96" column="53" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurDataType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -835,73 +814,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UserServlet2.java" />
-    <entry file="file://$PROJECT_DIR$/ProjetEE.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pimkoulj/MeteoSensorsModel/V0.0.4-RC/MeteoSensorsModel-V0.0.4-RC.jar!/model/Measure.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurdataEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="96" column="53" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1218#1219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Capteur.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/VilleEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/IdentifiantEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="102">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -913,22 +850,57 @@
             <element signature="e#193#194#0" expanded="true" />
             <element signature="e#240#241#0" expanded="true" />
             <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Capteur2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <caret line="26" column="59" lean-forward="true" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1253#1254#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Capteur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1383">
+          <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -937,59 +909,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UserServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="106" column="61" lean-forward="true" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="61" />
+        <state relative-caret-position="-697">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        <state relative-caret-position="612">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#351#367#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#2370#2371#0" expanded="true" />
-            <element signature="e#2415#2416#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="340">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/LogoutService/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="136">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
         </state>
       </provider>
     </entry>

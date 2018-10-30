@@ -1,8 +1,11 @@
 package LoginService;
 
 import MiddleWares.DatabaseMiddleWare;
+import Model.Capteur2;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginServlet extends HttpServlet {
         public static final String ATT_USER = "user";
         public static final String ATT_FORM = "form";
+        public static final String ATT_CAPTEURS = "capteurs";
         public static final String VUE_LOGIN = "/WEB-INF/login.jsp";
         public static final String VUE_ACCEUIL = "/WEB-INF/home.jsp";
 
@@ -32,9 +36,23 @@ public class LoginServlet extends HttpServlet {
             if(user.isCorrect() && form.getErrors().isEmpty()){
 
                 DatabaseMiddleWare databaseMiddleWare = new DatabaseMiddleWare();
-                String toto = databaseMiddleWare.getAll().toString();
+
+                //////// GET CAPTEUR BY ID EXEMPLE /////////////
+                /*String toto = databaseMiddleWare.getAll().toString();
                 request.setAttribute( "toto", toto);
 
+                Capteur2 capteur2 = databaseMiddleWare.getCapteur2byId(1);
+                request.setAttribute("capteur2", capteur2);*/
+
+                //////// GET CAPTEUR BY IDs EXEMPLE /////////////
+                /*ArrayList<Integer> ids = new ArrayList<>();
+                ids.add(1);
+                ids.add(2);
+                List<Capteur2> capteur2s = databaseMiddleWare.getCapteur2byIds(ids);
+                request.setAttribute("capteur2s", capteur2s);*/
+
+                List<Capteur2> capteur2ss = databaseMiddleWare.getAllCapteur2();
+                request.setAttribute(ATT_CAPTEURS,  capteur2ss);
 
                 /* Stockage du formulaire et du bean dans l'objet request */
                 request.setAttribute( ATT_FORM, form );

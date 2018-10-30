@@ -28,10 +28,19 @@ public class DatabaseMiddleWare {
         //em.close();
     }
 
-    public HashMap<Capteur, List<CapteurdataEntity>> getCapteurById(int search_id){
-        HashMap<Capteur, List<CapteurdataEntity>> result = new HashMap<>();
+    public  List<CapteurdataEntity> getCapteurDataByCapteurId(int capteur_id){
         List<CapteurdataEntity> capteurdatas = new ArrayList<>();
-        Capteur capteur;
+
+        beginTransaction();
+        capteurdatas = em.createQuery("SELECT p FROM CapteurdataEntity p where p.idCapteur =" + String.valueOf(capteur_id)).getResultList();
+
+       endTransaction();
+       return capteurdatas;
+    }
+
+    public Capteur2 getCapteur2byId(int search_id){
+
+        Capteur2 result = null;
 
         beginTransaction();
 
@@ -64,73 +73,47 @@ public class DatabaseMiddleWare {
 
             endTransaction();
 
-            capteur = new Capteur(capteurEntity,paysEntity,villeEntity);
+            result = new Capteur2(capteurEntity,paysEntity,villeEntity);
         }
 
-        beginTransaction();
-        capteurdatas = em.createQuery("SELECT p FROM CapteurdataEntity p where p.idCapteur =" + String.valueOf(search_id)).getResultList();
-
-        result.put(capteur,capteurdatas);
-
-        endTransaction();
         return result;
     }
 
-    public HashMap<Capteur, List<CapteurdataEntity>> getCapteurByIds(List<Integer> ids){
-
-
-        HashMap<Capteur, List<CapteurdataEntity>> result= new HashMap<>();
+    public List<Capteur2> getCapteur2byIds(List<Integer> ids){
+        List<Capteur2> result= new ArrayList<>();
         for(Integer id : ids){
-            HashMap<Capteur, List<CapteurdataEntity>> tmp= getCapteurById(id);
-            result.putAll(tmp);
+            result.add(getCapteur2byId(id));
         }
         return result;
     }
 
-    public HashMap<Capteur, List<CapteurdataEntity>> getAll(){
+    public List<Capteur2> getAllCapteur2(){
 
-        HashMap<Capteur, List<CapteurdataEntity>> result;
-        result = new HashMap<>();
+        List<Capteur2> result= new ArrayList<>();
+
 
         beginTransaction();
         List<CapteurEntity> capteurs = em.createQuery("SELECT p FROM CapteurEntity p").getResultList();
         endTransaction();
 
-        beginTransaction();
-        List<CapteurdataEntity> capteursDatas = em.createQuery("SELECT p FROM CapteurdataEntity p").getResultList();
-        endTransaction();
-
-        beginTransaction();
-        List<VilleEntity> villes = em.createQuery("SELECT p FROM VilleEntity p").getResultList();
-        endTransaction();
-
-        beginTransaction();
-        List<PaysEntity> pays = em.createQuery("SELECT p FROM PaysEntity p").getResultList();
-        endTransaction();
-
-        for(CapteurEntity capteurEntity : capteurs){
-            List<CapteurdataEntity> capteurdatas = new ArrayList<>();
-            VilleEntity ville = null;
-            PaysEntity pay_s = null;
-            for(CapteurdataEntity capteursData : capteursDatas){
-                if(capteursData.getIdCapteur() == capteurEntity.getId()){
-                    capteurdatas.add(capteursData);
-                }
-            }
-            for(VilleEntity villeEntity : villes){
-                if(villeEntity.getId() == capteurEntity.getIdVille()){
-                    ville = villeEntity;
-                }
-                for(PaysEntity paysEntity : pays){
-                    if(paysEntity.getId() == villeEntity.getIdPays()){
-                        pay_s = paysEntity;
-                    }
-                }
-            }
-            Capteur capteur = new Capteur(capteurEntity,pay_s,ville);
-            result.put(capteur, capteurdatas);
+        for(CapteurEntity capteurEntity :capteurs){
+            result.add(getCapteur2byId(capteurEntity.getId()));
         }
+
         return result;
     }
 
+    public boolean userInDb(String username, String password) {
+
+        beginTransaction();
+        List<IdentifiantEntity> identifiantsEntities = em.createQuery("SELECT p FROM IdentifiantEntity p").getResultList();
+        endTransaction();
+
+        for(IdentifiantEntity identifiantsEntity : identifiantsEntities){
+            if(identifiantsEntity.getUser().equals(username) && identifiantsEntity.getPassword().equals(password)){
+                return true;
+            }
+        }
+        return false;
+    }
 }
