@@ -17,7 +17,10 @@
     <title>Home</title>
     </head>
     <body>
-        <h1> Home </h1>
+
+        <h1> Hello in filter settings</h1>
+        <h1>  Your username is  : ${user.username} </h1>
+
         /
         <h2> ////////////////////////////////////////Datas///////////////////////////////////////</h2>
         <br>
@@ -68,6 +71,15 @@
             </c:forEach>
 
         </c:forEach>
+
+        <h1> Aller au filter settings </h1>
+
+
+        <!-- le go to filtersettings button -->
+        <form action="/filter/settings" method="post">
+            <input type="hidden" name="user" value=${user} />
+            <input type="submit" value="go to filter settings">
+        </form >
 
         <h1> Se deconnecter </h1>
 
