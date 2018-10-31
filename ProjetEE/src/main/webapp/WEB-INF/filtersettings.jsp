@@ -6,14 +6,15 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page session="true" %>
 <html>
 <head>
     <title>Filter Settings</title>
 </head>
 <body>
     <h1> Hello in filter settings</h1>
-    <h1>  Your username is  : ${user.username} </h1>
-    <h1>  request : ${request} </h1>
+    <h1> session ! Your username is  : ${sessionScope.username} </h1>
+
 
     <h1> Revenir à l'écran principal</h1>
     <!-- le go back to main page button -->

@@ -18,7 +18,6 @@ public class FilterSettingsServlet extends HttpServlet {
     }
 
     private void process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("request", req.getParameterMap().toString());
         req.getRequestDispatcher(VUE_FILTER_SETTINGS).forward(req,resp);
     }
 
