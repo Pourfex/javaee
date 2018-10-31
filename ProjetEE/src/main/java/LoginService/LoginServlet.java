@@ -26,15 +26,13 @@ public class LoginServlet extends HttpServlet {
             if(request.getSession(false) == null){
                 /* Affichage de la page de connexion */
                 this.getServletContext().getRequestDispatcher( VUE_LOGIN ).forward( request, response );
+            }else if(request.getSession(false).getAttribute("username") == null){
+                /* Affichage de la page de connexion */
+                this.getServletContext().getRequestDispatcher( VUE_LOGIN ).forward( request, response );
             }else{
-                if(request.getSession(false).isNew()){
-                    this.getServletContext().getRequestDispatcher( VUE_LOGIN ).forward( request, response );
-                }else{
-                    giveAllCapteurs(request);
-                    /*Affiche page de login */
-                    this.getServletContext().getRequestDispatcher( VUE_ACCEUIL ).forward( request, response );
-                }
-
+                giveAllCapteurs(request);
+                /*Affiche page de login */
+                this.getServletContext().getRequestDispatcher( VUE_ACCEUIL ).forward( request, response );
             }
 
 
@@ -62,24 +60,25 @@ public class LoginServlet extends HttpServlet {
     }
 
     public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
-            /* Préparation de l'objet formulaire */
-            ConnectForm form = new ConnectForm();
 
-            /* Appel au traitement et à la validation de la requête, et récupération du bean en résultant */
-            User user = form.getUser(request);
+                /* Préparation de l'objet formulaire */
+                ConnectForm form = new ConnectForm();
 
-            if(user.isCorrect() && form.getErrors().isEmpty()){
-                request.getSession(true);
-                request.getSession().setAttribute("username", request.getParameter("username"));
-                giveAllCapteurs(request);
-                this.getServletContext().getRequestDispatcher( VUE_ACCEUIL ).forward( request, response );
-            }else{
-                request.getSession().invalidate(); //TODO Useless ?
+                /* Appel au traitement et à la validation de la requête, et récupération du bean en résultant */
+                User user = form.getUser(request);
 
-                /* Stockage du formulaire et du bean dans l'objet request */
-                request.setAttribute( ATT_FORM, form );
-                this.getServletContext().getRequestDispatcher( VUE_LOGIN ).forward( request, response );
-            }
+                if(user.isCorrect() && form.getErrors().isEmpty()){
+                    request.getSession(true);
+                    request.getSession().setAttribute("username", request.getParameter("username"));
+                    giveAllCapteurs(request);
+                    this.getServletContext().getRequestDispatcher( VUE_ACCEUIL ).forward( request, response );
+                }else{
+                    request.getSession().invalidate(); //TODO Useless ?
+
+                    /* Stockage du formulaire et du bean dans l'objet request */
+                    request.setAttribute( ATT_FORM, form );
+                    this.getServletContext().getRequestDispatcher( VUE_LOGIN ).forward( request, response );
+                }
         }
 }
 
