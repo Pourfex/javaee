@@ -17,9 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginServlet extends HttpServlet {
         public static final String ATT_USER = "user";
         public static final String ATT_FORM = "form";
-        public static final String ATT_CAPTEURS = "capteurs";
         public static final String VUE_LOGIN = "/WEB-INF/login.jsp";
-        public static final String VUE_ACCEUIL = "/WEB-INF/home.jsp";
+        public static final String SERVLET_HOME = "/home";
+
 
         public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
 
@@ -30,34 +30,14 @@ public class LoginServlet extends HttpServlet {
                 /* Affichage de la page de connexion */
                 this.getServletContext().getRequestDispatcher( VUE_LOGIN ).forward( request, response );
             }else{
-                giveAllCapteurs(request);
-                /*Affiche page de login */
-                this.getServletContext().getRequestDispatcher( VUE_ACCEUIL ).forward( request, response );
+                this.getServletContext().getRequestDispatcher(SERVLET_HOME).forward(request,response);
+                //TODO
             }
 
 
         }
 
-    private void giveAllCapteurs(HttpServletRequest request) {
-        DatabaseMiddleWare databaseMiddleWare = new DatabaseMiddleWare();
 
-        //////// GET CAPTEUR BY ID EXEMPLE /////////////
-                /*String toto = databaseMiddleWare.getAll().toString();
-                request.setAttribute( "toto", toto);
-
-                Capteur2 capteur2 = databaseMiddleWare.getCapteur2byId(1);
-                request.setAttribute("capteur2", capteur2);*/
-
-        //////// GET CAPTEUR BY IDs EXEMPLE /////////////
-                /*ArrayList<Integer> ids = new ArrayList<>();
-                ids.add(1);
-                ids.add(2);
-                List<Capteur2> capteur2s = databaseMiddleWare.getCapteur2byIds(ids);
-                request.setAttribute("capteur2s", capteur2s);*/
-
-        List<Capteur2> capteur2ss = databaseMiddleWare.getAllCapteur2();
-        request.setAttribute(ATT_CAPTEURS,  capteur2ss);
-    }
 
     public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
 
@@ -70,8 +50,8 @@ public class LoginServlet extends HttpServlet {
                 if(user.isCorrect() && form.getErrors().isEmpty()){
                     request.getSession(true);
                     request.getSession().setAttribute("username", request.getParameter("username"));
-                    giveAllCapteurs(request);
-                    this.getServletContext().getRequestDispatcher( VUE_ACCEUIL ).forward( request, response );
+                    this.getServletContext().getRequestDispatcher(SERVLET_HOME).forward(request,response);
+                   //TODO
                 }else{
                     request.getSession().invalidate(); //TODO Useless ?
 
