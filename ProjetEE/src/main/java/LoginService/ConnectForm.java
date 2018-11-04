@@ -16,6 +16,7 @@ public class ConnectForm {
     private Map<String, String> errors = new HashMap<String, String>();
 
     public Map<String, String> getErrors() {
+
         return errors;
     }
 

@@ -48,20 +48,9 @@
 <body>
 <h1> Description </h1>
 
-<!-- <form action="login" method="post">
-    Username:<input type="text" name="username">
-    Password:<input type="password" name="password">
-    <input type="submit" value="login">
-</form >
-
--->
-
-<h2> Erreurs : ${form.errors} </h2>
-
-
 <div class="container">
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
+        <div class="col-md-8 col-md-offset-2">
             <div class="login-panel panel panel-default">
                 <div class="panel-heading">
                     <h2 class="panel-title">Veuillez-vous connecter</h2>
@@ -88,6 +77,12 @@
                             </div>
 
                             <a href="../forgotpass.html" >Mot de passe oublié ?</a>
+
+                            <c:forEach var="entry" items="${form.errors.values()}">
+                                <div class="alert alert-warning">
+                                     Erreur : ${entry}
+                                </div>
+                            </c:forEach>
 
                             <!-- Change this to a button or input when using tis as a form -->
                             <button type="submit" class="btn btn-lg btn-success btn-block">Se connecter</button>
