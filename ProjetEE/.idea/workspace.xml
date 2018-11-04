@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a85b959-adf0-4217-9d86-822da544126e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/login.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -137,7 +134,7 @@
           <entry key="dummy" value="7" />
           <entry key="html" value="25" />
           <entry key="java" value="3856" />
-          <entry key="jsp" value="1336" />
+          <entry key="jsp" value="1469" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
@@ -145,7 +142,7 @@
         <counts>
           <entry key="HTML" value="25" />
           <entry key="JAVA" value="3856" />
-          <entry key="JSP" value="1336" />
+          <entry key="JSP" value="1469" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="XML" value="6" />
         </counts>
@@ -157,8 +154,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="374">
+              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -411,7 +408,7 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="3eaa38ef-cc79-4e1f-9f04-dd3d3edbc3ce" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541328106531" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541328463723" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -634,12 +631,12 @@
       <workItem from="1540989830490" duration="7431000" />
       <workItem from="1541001013428" duration="1118000" />
       <workItem from="1541252313431" duration="403000" />
-      <workItem from="1541320679714" duration="5382000" />
+      <workItem from="1541320679714" duration="5747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64648000" />
+    <option name="totallyTimeSpent" value="65013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1011,8 +1008,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="374">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
         </state>
       </provider>
     </entry>
