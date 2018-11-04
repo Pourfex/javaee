@@ -25,23 +25,14 @@
 
         /
         <h2> ////////////////////////////////////////Datas///////////////////////////////////////</h2>
-        <br>
-            <c:forEach var="entry" items="${capteur2.data}">
 
-                <h3> /////////////////Data/////////////////</h3>
-                <h3> Gps = ${entry.gps} </h3>
-                <h3> Type = ${entry.type} </h3>
-                <h3> Value = ${entry.value} </h3>
-                <h3> Timestamp = ${entry.timestamp} </h3>
-
-            </c:forEach>
-        <br>
 
         <c:forEach var="capteur22" items="${capteur2s}">
 
             <h2> /////////////////Capteur/////////////////</h2>
             <h2> Capteur2 ville : ${capteur22.ville}</h2>
             <h2> Capteur2 pays : ${capteur22.pays}</h2>
+            <h3> Tag = ${capteur22.tag} </h3>
 
             <c:forEach var="entry" items="${capteur22.data}">
 
@@ -61,6 +52,7 @@
             <h2> /////////////////Capteur/////////////////</h2>
             <h2> Capteur2 ville : ${capteur222.ville}</h2>
             <h2> Capteur2 pays : ${capteur222.pays}</h2>
+            <h3> Tag = ${capteur222.tag} </h3>
 
             <c:forEach var="entry" items="${capteur222.data}">
 
@@ -69,6 +61,7 @@
                 <h3> Type = ${entry.type} </h3>
                 <h3> Value = ${entry.value} </h3>
                 <h3> Timestamp = ${entry.timestamp} </h3>
+
 
             </c:forEach>
 
