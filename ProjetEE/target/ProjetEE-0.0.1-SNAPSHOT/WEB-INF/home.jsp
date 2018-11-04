@@ -20,7 +20,7 @@
     </head>
     <body>
 
-        <h1> Hello in filter settings</h1>
+        <h1> Hello in home page</h1>
         <h1> session ! Your username is  : ${sessionScope.username} </h1>
 
         /
