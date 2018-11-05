@@ -25,8 +25,7 @@
 
         /
         <h2> ////////////////////////////////////////Datas///////////////////////////////////////</h2>
-
-
+        <!--
         <c:forEach var="capteur22" items="${capteur2s}">
 
             <h2> /////////////////Capteur/////////////////</h2>
@@ -66,6 +65,30 @@
             </c:forEach>
 
         </c:forEach>
+
+-->
+
+        <h1> Test de la barre de recherche : </h1>
+        <c:forEach var="entryrb" items="${capteursGivenByResearchBar}">
+
+            <h2> /////////////////Capteur/////////////////</h2>
+            <h2> Capteur2 ville : ${entryrb.ville}</h2>
+            <h2> Capteur2 pays : ${entryrb.pays}</h2>
+            <h3> Tag = ${entryrb.tag} </h3>
+
+            <c:forEach var="entry" items="${entryrb.data}">
+
+                <h3> /////////////////Data/////////////////</h3>
+                <h3> Gps = ${entry.gps} </h3>
+                <h3> Type = ${entry.type} </h3>
+                <h3> Value = ${entry.value} </h3>
+                <h3> Timestamp = ${entry.timestamp} </h3>
+
+
+            </c:forEach>
+
+        </c:forEach>
+
 
         <h1> Aller au filter settings </h1>
 
