@@ -21,7 +21,7 @@
 <meta name="description" content="This is the login page for ">
 <meta name="author" content="Alexis Delforges">
 
-<title>Info Capteur</title>
+<title>Info Capteur n° <%=request.getParameter("id")%> - ${type}</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,8 +48,8 @@
 
 <body>
 
-	<div><%=request.getParameter("id")%></div>
-	<div><%=request.getParameter("type")%></div>
+	<div>Données du capteur n° <%=request.getParameter("id")%></div>
+	<div>Mesure de ${type}</div>
 
 	<div class="cols-sm-10">
 		<canvas id="myChart"></canvas>
