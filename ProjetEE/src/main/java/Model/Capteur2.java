@@ -22,7 +22,7 @@ public class Capteur2 {
     }
 
     private CapteurTags createRandomTag() {
-        int random = (new Random().nextInt()) % 5 ;
+        int random = (new Random().nextInt(6)) % 5 ;
         switch (random){
             case 0 : return CapteurTags.RAFFINERIE;
             case 1 : return CapteurTags.EXTERIEUR;

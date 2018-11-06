@@ -31,3 +31,4 @@ ProjetEE/target/classes/Model/CapteurTags.class
 ProjetEE/target/classes/Model/IdentifiantEntity.class
 ProjetEE/target/classes/Model/PaysEntity.class
 ProjetEE/target/classes/Model/VilleEntity.class
+*.class

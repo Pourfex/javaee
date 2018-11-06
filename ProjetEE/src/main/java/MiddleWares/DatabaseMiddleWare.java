@@ -12,11 +12,17 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import Model.Capteur2;
+import Model.CapteurDataType;
 import Model.CapteurEntity;
+import Model.CapteurTags;
 import Model.CapteurdataEntity;
 import Model.IdentifiantEntity;
 import Model.PaysEntity;
 import Model.VilleEntity;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 
 public class DatabaseMiddleWare {
 
@@ -141,5 +147,164 @@ public class DatabaseMiddleWare {
 				return arg0.getTimestamp().before(arg1.getTimestamp()) ? -1 : 1;
 			}});
         return returnValue;
+    }
+
+    public List<Capteur2> getAllCapteurByResearchBar(ArrayList<String> ids_result, ArrayList<String> tags_result, ArrayList<String> types_result) {
+        List<Capteur2> result= new ArrayList<>();
+
+        /*To test :     */
+
+        //test filterByTypes :
+       /* types_result = new ArrayList<>();
+        types_result.add("temperature");
+        types_result.add("pression");*/
+
+
+        //test filterByTags :
+        /*tags_result = new ArrayList<>();
+        tags_result.add("raffinerie");
+        tags_result.add("reacteurs");*/
+
+
+        //test filterByIds :
+        /*ids_result = new ArrayList<>();
+        ids_result.add("1");
+        ids_result.add("2");*/
+
+
+
+        boolean allIds = ids_result.get(0).equals("all");
+        boolean allTags = tags_result.get(0).equals("all");
+        boolean allTypes = types_result.get(0).equals("all");
+
+        if(allIds){
+            if(allTags){
+                if(allTypes){
+                    result = getAllCapteur2();
+                }else{
+                    result = filterByTypes(types_result);
+                }
+            }else{
+                if(allTypes){
+                    result = filterByTags(tags_result);
+                }else{
+                    result = filterByTypesAndTags(types_result, tags_result);
+                }
+            }
+        }else{
+            if(allTags){
+                if(allTypes){
+                    result = filterByIds(ids_result);
+                }else{
+                    result = filterByTypesAndIds(types_result,ids_result);
+                }
+            }else{
+                if(allTypes){
+                    result = filterByTagsAndIds(tags_result,ids_result);
+                }else{
+                    result = filterByTypesAndTagsAndIds(types_result, tags_result,ids_result);
+                }
+            }
+        }
+        return result;
+    }
+
+    private List<Capteur2> filterByTagsAndIds(ArrayList<String> tags_result, ArrayList<String> ids_result) {
+        List<Capteur2> result= new ArrayList<>();
+        result = filterByIds(ids_result);
+        filterListByTags(tags_result, result);
+        return result;
+    }
+
+    private List<Capteur2> filterByTypesAndTagsAndIds(ArrayList<String> types_result, ArrayList<String> tags_result, ArrayList<String> ids_result) {
+        List<Capteur2> result= new ArrayList<>();
+        result = filterByIds(ids_result);
+
+        filterListByTags(tags_result, result);
+        filterListByTypes(types_result,result);
+
+        return result;
+    }
+
+    private List<Capteur2> filterByTypesAndIds(ArrayList<String> types_result, ArrayList<String> ids_result) {
+        List<Capteur2> result= new ArrayList<>();
+        result = filterByIds(ids_result);
+
+        filterListByTypes(types_result,result);
+
+        return result;
+    }
+
+    private List<Capteur2> filterByIds(ArrayList<String> ids_result) {
+        ArrayList<Integer> mapper = new ArrayList<>();
+        for(String s : ids_result) {
+            mapper.add(Integer.valueOf(s));
+        }
+        return getCapteur2byIds(mapper);
+    }
+
+    private List<Capteur2> filterByTypesAndTags(ArrayList<String> types_result, ArrayList<String> tags_result) {
+        List<Capteur2> result= new ArrayList<>();
+        result = getAllCapteur2();
+
+        filterListByTags(tags_result, result);
+        filterListByTypes(types_result,result);
+
+        return result;
+
+    }
+
+    private List<Capteur2> filterByTags(ArrayList<String> tags_result) {
+        List<Capteur2> result= new ArrayList<>();
+        result = getAllCapteur2();
+
+        filterListByTags(tags_result, result);
+        return result;
+    }
+
+    private void filterListByTags(ArrayList<String> tags_result, List<Capteur2> result) {
+        Iterator<Capteur2> i = result.iterator();
+        while (i.hasNext()) {
+            Capteur2 capteur2 = i.next();
+            CapteurTags capteurTag = capteur2.getTag();
+            boolean keep= false;
+            for(String s : tags_result){
+                String sUpper = s.toUpperCase();
+                String scapteurTag = capteurTag.toString();
+                if(s.toUpperCase().equals(capteurTag.toString())){
+                    keep = true;
+                }
+            }
+            if(!keep){
+                i.remove();
+            }
+        }
+    }
+
+    private List<Capteur2> filterByTypes(ArrayList<String> types_result) {
+        List<Capteur2> result= new ArrayList<>();
+        result = getAllCapteur2();
+
+        filterListByTypes(types_result, result);
+        return result;
+    }
+
+    private void filterListByTypes(ArrayList<String> types_result, List<Capteur2> result) {
+        Iterator<Capteur2> i = result.iterator();
+        while (i.hasNext()) {
+            Capteur2 capteur2 = i.next();
+            CapteurDataType capteurDataType = capteur2.getData().get(0).getType();
+            boolean keep= false;
+            for(String s : types_result){
+                String sUpper = s.toUpperCase();
+                String scapteurDataType = capteurDataType.toString();
+                if(s.toUpperCase().equals(capteurDataType.toString())){
+                    keep = true;
+                }
+            }
+            if(!keep){
+                i.remove();
+            }
+        }
     }
 }
