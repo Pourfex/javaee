@@ -1,13 +1,22 @@
 package MiddleWares;
 
-import Model.*;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import javax.persistence.Query;
+
+import Model.Capteur2;
+import Model.CapteurEntity;
+import Model.CapteurdataEntity;
+import Model.IdentifiantEntity;
+import Model.PaysEntity;
+import Model.VilleEntity;
 
 public class DatabaseMiddleWare {
 
@@ -115,5 +124,22 @@ public class DatabaseMiddleWare {
             }
         }
         return false;
+    }
+    
+    public List<CapteurdataEntity> getCapteurDataFromDate(int id, Timestamp time) {
+
+        beginTransaction();
+//        List<CapteurdataEntity> returnValue = em.createQuery("SELECT e FROM CapteurdataEntity e WHERE e.idCapteur = " + id + " AND e.timestamp.fastTime >= " + time).getResultList();
+        Query q = em.createQuery("SELECT e FROM CapteurdataEntity e WHERE e.idCapteur = :id AND e.timestamp >= :time");
+        q.setParameter("time", time);
+        q.setParameter("id", id);
+        List<CapteurdataEntity> returnValue = q.getResultList();
+        endTransaction();
+        
+        Collections.sort(returnValue, new Comparator<CapteurdataEntity>() {
+			public int compare(CapteurdataEntity arg0, CapteurdataEntity arg1) {
+				return arg0.getTimestamp().before(arg1.getTimestamp()) ? -1 : 1;
+			}});
+        return returnValue;
     }
 }
