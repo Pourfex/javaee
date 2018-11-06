@@ -18,6 +18,7 @@ public class DatabaseMiddleWare {
     public DatabaseMiddleWare(){
         emf = Persistence.createEntityManagerFactory("capteurdb");
         em = emf.createEntityManager();
+
     }
 
     private void beginTransaction() {
