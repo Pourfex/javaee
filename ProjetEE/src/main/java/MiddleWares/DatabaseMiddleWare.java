@@ -11,14 +11,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-import Model.Capteur2;
-import Model.CapteurDataType;
-import Model.CapteurEntity;
-import Model.CapteurTags;
-import Model.CapteurdataEntity;
-import Model.IdentifiantEntity;
-import Model.PaysEntity;
-import Model.VilleEntity;
+import Model.*;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -42,6 +36,39 @@ public class DatabaseMiddleWare {
     private void endTransaction() {
         em.getTransaction().commit();
         //em.close();
+    }
+
+    public HashMap<CapteurDataType, Integer> getSeuilCapteurs(){
+        HashMap<CapteurDataType, Integer> result = new HashMap<>();
+
+        beginTransaction();
+        List<SeuilCapteursEntity>  seuilCapteursEntities= em.createQuery("SELECT p FROM SeuilCapteursEntity p").getResultList();
+
+        for(SeuilCapteursEntity seuilCapteursEntity : seuilCapteursEntities){
+            result.put(parseStringForCapteurDataType(seuilCapteursEntity.getType()), seuilCapteursEntity.getValue());
+        }
+        endTransaction();
+        return result;
+    }
+
+    private CapteurDataType parseStringForCapteurDataType(String type) {
+        switch (type){
+            case "HUMIDITE" : return CapteurDataType.HUMIDITE;
+            case "TEMPERATURE" : return CapteurDataType.TEMPERATURE;
+            case "VITESSE_VENT" : return CapteurDataType.VITESSE_VENT;
+            case "PRESSION" : return CapteurDataType.PRESSION;
+            default: return CapteurDataType.HUMIDITE;
+        }
+    }
+
+    public void setSeuilCapteurs (HashMap<CapteurDataType, Integer> newSeuilCapteurs){
+        for(CapteurDataType capteurDataType : newSeuilCapteurs.keySet()){
+            beginTransaction();
+            Query query = em.createQuery("UPDATE SeuilCapteursEntity set value = :newvalue " + "where type = :typee");
+            query.setParameter("newvalue", newSeuilCapteurs.get(capteurDataType) );
+            query.setParameter("typee", capteurDataType.toString() );
+            endTransaction();
+        }
     }
 
     public  List<CapteurdataEntity> getCapteurDataByCapteurId(int capteur_id){
