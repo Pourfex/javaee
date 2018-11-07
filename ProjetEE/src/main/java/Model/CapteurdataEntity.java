@@ -5,7 +5,7 @@ import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
-@Table(name = "capteurdata", schema = "capteurdb", catalog = "")
+@Table(name = "capteurdata")
 public class CapteurdataEntity {
     private long id;
     private int idCapteur;
@@ -13,6 +13,7 @@ public class CapteurdataEntity {
     private Double value;
     private int type;
     private String gps;
+
 
     @Id
     @Column(name = "id")
@@ -99,4 +100,6 @@ public class CapteurdataEntity {
                 + "\n value : " + getValue()
                 + "\n timestamp : " + getTimestamp();
     }
+
+
 }

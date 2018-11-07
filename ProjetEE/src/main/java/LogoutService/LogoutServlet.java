@@ -21,7 +21,7 @@ public class LogoutServlet extends HttpServlet {
     private void process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         session.invalidate();
-        req.getRequestDispatcher(VUE_LOGIN).forward(req,resp);
+        resp.sendRedirect(req.getContextPath()+"/login" );
     }
 
     @Override

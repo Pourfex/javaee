@@ -7,16 +7,105 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a85b959-adf0-4217-9d86-822da544126e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeService/AlertesServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SearchService/SearchServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jspf/dependencies.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jspf/footer.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jspf/header.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jspf/header_capteur.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jspf/header_login.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jspf/header_settings.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jspf/snackbar.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/font-awesome/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/font-awesome/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/libs/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/ressources/storm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/sb-admin-2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/script_chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/script_index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/script_settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/chart_index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/sb-admin-2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/snackbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/spinner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ProjetEE_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ProjetEE_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3eaa38ef-cc79-4e1f-9f04-dd3d3edbc3ce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3eaa38ef-cc79-4e1f-9f04-dd3d3edbc3ce.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pimkoulj_MeteoSensorsModel_V0_0_4_RC.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetEE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetEE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FilterSettingsService/FilterSettingsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FilterSettingsService/FilterSettingsServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomeService/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeService/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogoutService/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogoutService/LogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Capteur2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Capteur2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/CapteurData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/CapteurData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/CapteurEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/CapteurEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/CapteurdataEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/CapteurdataEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/filtersettings.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/filtersettings.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/forgotpass.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/forgotpass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/FilterSettingsService/FilterSettingsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/FilterSettingsService/FilterSettingsServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/HomeService/HomeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/HomeService/HomeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LoginService/ConnectForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LoginService/ConnectForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LoginService/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LoginService/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LoginService/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LoginService/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LogoutService/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/LogoutService/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/MiddleWares/DatabaseMiddleWare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/MiddleWares/DatabaseMiddleWare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/Capteur2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/Capteur2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/CapteurData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/CapteurData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/CapteurDataType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/CapteurDataType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/CapteurEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/CapteurEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/CapteurTags.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/CapteurTags.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/CapteurdataEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/CapteurdataEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/IdentifiantEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/IdentifiantEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/PaysEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/PaysEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/VilleEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/classes/Model/VilleEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/filtersettings.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/filtersettings.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/forgotpass.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProjetEE-0.0.1-SNAPSHOT/forgotpass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FilterSettingsService/FilterSettingsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FilterSettingsService/FilterSettingsServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/HomeService/HomeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HomeService/HomeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginService/ConnectForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginService/ConnectForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginService/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginService/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginService/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginService/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogoutService/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogoutService/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MiddleWares/DatabaseMiddleWare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MiddleWares/DatabaseMiddleWare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Capteur2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Capteur2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/CapteurData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/CapteurData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/CapteurDataType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/CapteurDataType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/CapteurEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/CapteurEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/CapteurTags.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/CapteurTags.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/CapteurdataEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/CapteurdataEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/IdentifiantEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/IdentifiantEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/PaysEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/PaysEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/VilleEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/VilleEntity.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,6 +114,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ProjetEE$Tomcat_for_ProjetEE.ic" NAME="Tomcat for ProjetEE Coverage Results" MODIFIED="1541541498702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -41,6 +133,17 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="capteurdb@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="capteurdb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="capteurdb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="capteurdb: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -159,93 +262,163 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1600093825">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="21" />
+          <entry key="html" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="58" />
+          <entry key="js" value="8" />
+          <entry key="jsp" value="18" />
+          <entry key="jspf" value="22" />
+          <entry key="xhtml" value="2" />
+          <entry key="xml" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="21" />
+          <entry key="HTML" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="58" />
+          <entry key="JSP" value="40" />
+          <entry key="JavaScript" value="8" />
+          <entry key="XHTML" value="2" />
+          <entry key="XML" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="1078" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="1428" />
+          <entry key="js" value="1701" />
+          <entry key="jsp" value="1086" />
+          <entry key="jspf" value="92" />
+          <entry key="txt" value="9" />
+          <entry key="xhtml" value="5" />
+          <entry key="xml" value="45" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="1078" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="1426" />
+          <entry key="JPA QL" value="2" />
+          <entry key="JSP" value="1178" />
+          <entry key="JavaScript" value="1701" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="XHTML" value="5" />
+          <entry key="XML" value="45" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/HomeService/HomeServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="225">
+              <caret line="136" column="59" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/Capteur2.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FilterSettingsService/FilterSettingsServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+            <state relative-caret-position="315">
+              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1908#1909#0" expanded="true" />
-                <element signature="e#1934#1935#0" expanded="true" />
-                <element signature="e#1977#1978#0" expanded="true" />
-                <element signature="e#2007#2008#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurTags.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/capteur.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="46" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="46" />
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurDataType.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jspf/header.jspf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="225">
+              <caret line="15" column="82" lean-forward="true" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurEntity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jspf/header_capteur.jspf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="225">
+              <caret line="15" column="106" selection-start-line="15" selection-start-column="106" selection-end-line="15" selection-end-column="106" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurData.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jspf/header_settings.jspf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
+            <state relative-caret-position="225">
+              <caret line="15" column="94" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurdataEntity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="96" column="53" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+            <state relative-caret-position="165">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/chart_index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+            <state relative-caret-position="195">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/script_chart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/nocapteurspecified.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -255,17 +428,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Jsp File" />
         <option value="HTML File" />
         <option value="Singleton" />
         <option value="Enum" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
+        <option value="Class" />
+        <option value="jsf" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>id_ville</find>
+      <find>CapteurdataEntity</find>
+      <find>z-id</find>
+      <find>giveResearchBarCapteurs</find>
+      <find>getAllCapteurByResearchBar</find>
+      <find>last</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -274,46 +454,68 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/test_respond.html" />
-        <option value="$PROJECT_DIR$/src/main/java/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/VilleEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/PaysEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/CapteurdataEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/CapteurEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/Capteur.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/UserServlet2.java" />
-        <option value="$PROJECT_DIR$/web/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/UserServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LoginService/InscriptionForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LoginService/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LoginService/LoginServlet2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/CapteurData.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/CapteurDataType.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Model/IdentifiantEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/filtersettings.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/FilterSettingsService/FilterSettingsServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LogoutService/LogoutServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/forgotpass.html" />
         <option value="$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Model/CapteurTags.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HomeService/HomeServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/MyCapteur.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/ProjetEE.iml" />
+        <option value="$PROJECT_DIR$/src/main/java/MiddleWares/HibernateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/footer.css" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/CapteurEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/CapteurdataEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/Capteur2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/CapteurData.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/spinner.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspf/snackbar.jspf" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/snackbar.css" />
+        <option value="$PROJECT_DIR$/src/main/java/HomeService/HomeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LogoutService/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/login.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/header.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspf/header_login.jspf" />
+        <option value="$PROJECT_DIR$/src/main/java/HomeService/CapteursDataServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/HomeService/AlertesServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/ConstanteUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/capteur_detail.css" />
+        <option value="$PROJECT_DIR$/src/main/java/FilterSettingsService/FilterSettingsServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/script_index.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspf/dependencies.jspf" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/filtersettings.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/capteur.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Other/AuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/scripts/script_chart.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/SearchService/SearchServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/forgotpass.html" />
         <option value="$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/SeuilCapteursEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CapteurService/CapteurServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/chart_index.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/main.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/nocapteurspecified.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspf/header.jspf" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspf/header_capteur.jspf" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jspf/header_settings.jspf" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -327,22 +529,25 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ProjetEE" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="480" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="y" value="25" />
+    <option name="width" value="1366" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -374,6 +579,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="CapteurService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetEE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetEE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="FilterSettingsService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -390,22 +603,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjetEE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjetEE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="LogoutService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjetEE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjetEE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="MiddleWares" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -415,6 +612,22 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetEE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetEE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetEE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetEE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SearchService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjetEE" type="b2602c69:ProjectViewProjectNode" />
@@ -444,7 +657,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="jspf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetEE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetEE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetEE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetEE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjetEE" type="b2602c69:ProjectViewProjectNode" />
@@ -462,50 +691,57 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JPA.DatabaseSchemaImportDialog" value="3eaa38ef-cc79-4e1f-9f04-dd3d3edbc3ce" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541450960895" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541599707779" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
+    <key name="CreateClassDialog.RecentsKey">
       <recent name="Model" />
-      <recent name="servlets" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Users\Pourfex\IdeaProjects\javaee\ProjetEE\src\main\webapp" />
-      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\src\main\webapp" />
-      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\src\main\webapp\WEB-INF" />
-      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\web" />
-      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\web\WEB-INF" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Users\Pourfex\IdeaProjects\javaee\ProjetEE\src\main\webapp\WEB-INF" />
-      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\src\main\webapp" />
-      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\src\main\java\META-INF" />
-      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\src\main\java" />
-      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\web\WEB-INF" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="Model" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/jspf" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="D:\Users\Pourfex\IdeaProjects\javaee\ProjetEE\src\main\webapp\WEB-INF" />
+      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="SearchService" />
+      <recent name="HomeService" />
+      <recent name="Other" />
       <recent name="Model" />
+      <recent name="MiddleWares" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="D:\Users\Pourfex\IdeaProjects\javaee\ProjetEE\src\main\webapp" />
+      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\src\main\webapp" />
+      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\src\main\webapp\WEB-INF" />
+      <recent name="D:\Users\Pourfex\IdeaProjects\ProjetEE\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -594,7 +830,8 @@
         </option>
       </method>
     </configuration>
-    <configuration name="Tomcat for ProjetEE" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.34" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat for ProjetEE" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.91" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ProjetEE:war exploded">
@@ -605,6 +842,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_ProjetEE" />
+        <option name="JNDI_PORT" value="2001" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -696,17 +934,20 @@
       <workItem from="1541320679714" duration="7186000" />
       <workItem from="1541419039946" duration="1646000" />
       <workItem from="1541438452383" duration="6672000" />
+      <workItem from="1541495946586" duration="13665000" />
+      <workItem from="1541532994872" duration="14481000" />
+      <workItem from="1541574957603" duration="21452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74770000" />
+    <option name="totallyTimeSpent" value="124368000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28997868" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22954546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -717,9 +958,9 @@
       <window_info id="JavaEE:App" order="8" side_tool="true" />
       <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997923" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32789558" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5807504" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.55791193" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -727,9 +968,9 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Tool Output" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32917964" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32463294" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32952693" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="ANTLR Preview" order="15" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32917964" />
@@ -739,13 +980,14 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="6" weight="0.1444563" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32954547" />
+      <window_info anchor="right" id="Database" order="6" weight="0.275" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22954546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -756,8 +998,8 @@
       <window_info id="JavaEE:App" order="8" side_tool="true" />
       <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32864866" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.51386625" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -766,7 +1008,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Tool Output" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32917964" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32463294" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
@@ -778,10 +1020,11 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.1444563" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32954547" />
+      <window_info anchor="right" id="Database" order="6" weight="0.122727275" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -799,318 +1042,380 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FilterSettingsService/FilterSettingsServlet.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java</url>
-          <line>165</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java</url>
-          <line>151</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java</url>
-          <line>153</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java</url>
-          <line>157</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/test1.html" />
-    <entry file="file://$PROJECT_DIR$/web/test3.html" />
-    <entry file="file://$PROJECT_DIR$/web/toto.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/test3.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/sb-admin-2.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/test4.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/MiddleWare.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/ResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="440" selection-start-line="440" selection-end-line="440" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/PropertyResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/javax/persistence/Persistence.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-113">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cf0173c9-d17f-4b06-bb9b-6b15c6755332/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://3eaa38ef-cc79-4e1f-9f04-dd3d3edbc3ce/schema/capteurdb/table/pays">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3eaa38ef-cc79-4e1f-9f04-dd3d3edbc3ce/schema/capteurdb/table/ville">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3eaa38ef-cc79-4e1f-9f04-dd3d3edbc3ce/schema/capteurdb/table/capteur">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3eaa38ef-cc79-4e1f-9f04-dd3d3edbc3ce/schema/capteurdb/table/capteurdata">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/application.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/test2.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UserServlet2.java" />
     <entry file="file://$PROJECT_DIR$/ProjetEE.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/PaysEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pimkoulj/MeteoSensorsModel/V0.0.4-RC/MeteoSensorsModel-V0.0.4-RC.jar!/model/Measure.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="56" column="67" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="391">
+          <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/VilleEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/IdentifiantEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Capteur.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UserServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/LoginService/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../JAVA/Tomcat7034-light/lib/servlet-api.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FilterSettingsService/FilterSettingsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/filtersettings.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LogoutService/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="552" column="22" selection-start-line="552" selection-start-column="22" selection-end-line="552" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/vendor/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="4" column="48408" selection-start-line="4" selection-start-column="48408" selection-end-line="4" selection-end-column="48408" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="89" selection-start-line="90" selection-start-column="61" selection-end-line="90" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LoginService/ConnectForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/forgotpass.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurdataEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="96" column="53" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurDataType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="66">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurTags.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="45">
           <caret line="3" column="46" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/MyCapteur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="115" column="4" lean-forward="true" selection-start-line="115" selection-start-column="4" selection-end-line="116" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1458#1459#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+            <element signature="e#1614#1615#0" expanded="true" />
+            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1684#1685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/spinner.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspf/snackbar.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurdataEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/Capteur2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        <state relative-caret-position="381">
+          <caret line="43" column="59" lean-forward="true" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1908#1909#0" expanded="true" />
-            <element signature="e#1934#1935#0" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
-            <element signature="e#2007#2008#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/snackbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/sb-admin-2.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HomeService/HomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="273">
+          <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LoginService/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LogoutService/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/login.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MiddleWares/HibernateUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/ConstanteUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HomeService/AlertesServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/CapteurDataType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/script_index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="41" lean-forward="true" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/filtersettings.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#2011#2018#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspf/dependencies.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspf/header_login.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="802">
+          <caret line="63" column="88" selection-start-line="63" selection-start-column="88" selection-end-line="63" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HomeService/CapteursDataServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="39" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Other/AuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SearchService/SearchServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="61" column="51" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/forgotpass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/capteur_detail.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/SeuilCapteursEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CapteurService/CapteurServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/scripts/script_chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/chart_index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/capteur.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/nocapteurspecified.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspf/header.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="82" lean-forward="true" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspf/header_capteur.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="106" selection-start-line="15" selection-start-column="106" selection-end-line="15" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jspf/header_settings.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="94" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MiddleWares/DatabaseMiddleWare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
+        <state relative-caret-position="225">
+          <caret line="136" column="59" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FilterSettingsService/FilterSettingsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,12 +1473,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ProjetEE</last-edited>
+          <last-edited>Hibernate|ProjetEE</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

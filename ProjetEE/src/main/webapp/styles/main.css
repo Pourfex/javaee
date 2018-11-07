@@ -1,0 +1,149 @@
+html, body{
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: #F5F5F5;
+    position: relative;
+    font-family: 'Roboto', Helvetica, sans-serif, Arial;
+}
+
+#wrapper {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#content {
+    min-height: 100%;
+    margin: 155px 100px 75px 100px;
+}
+
+
+#content_capteur{
+    min-height: 100%;
+    margin: 155px 100px 50px 100px;
+}
+
+/*** SEARCH BAR ***/
+.seach_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 25px auto 50px auto;
+
+}
+
+.seach_bar input[type=text]{
+    padding: 0 6px;
+    height: 30px;
+    margin: 0 6px;
+    font-size: 1em;
+    border: 1px solid lightgray;
+    width: 150px;
+}
+
+.seach_bar button{
+    height: 30px;
+    width: 90px;
+    padding: 0 0 0 6px;
+    margin: 0 0 0 6px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid gray;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+.seach_bar button:hover {
+    background: #0b7dda;
+}
+
+
+
+/*** ALERTES ***/
+#alerts{
+    display: none;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+#alert_list {
+    list-style-type: none;
+    margin: auto;
+    display: none;
+}
+
+#alert_list li {
+    height: auto;
+    padding: 25px;
+    margin: 25px;
+    background: #F44336;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+/*** LOGIN PAGE ***/
+#login_btn{
+    background-color: #1E88E5;
+}
+
+#login_body{
+    padding: 70px 25px 60px 25px;
+    width: 400px;
+    margin: auto;
+}
+
+
+#login_title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#login_panel_id {
+    margin-top: 50px;
+}
+
+#chart_detail canvas{
+    height: 60vh;
+    text-align: center;
+    margin: auto;
+}
+
+#buttons_change{
+    margin: auto;
+    text-align: center;
+}
+
+
+/*** SETTINGS ***/
+#param_detail{
+    margin: 50px auto 50px auto;
+    width: 500px;
+    padding: 20px 70px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#param_detail h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+#btn_edit_div{
+    text-align: center;
+    width: 100%;
+}

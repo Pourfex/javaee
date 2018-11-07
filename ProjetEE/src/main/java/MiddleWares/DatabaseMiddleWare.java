@@ -5,10 +5,10 @@ import Model.*;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import javax.persistence.Query;
+import javax.servlet.http.HttpServletRequest;
+import java.sql.Timestamp;
+import java.util.*;
 
 public class DatabaseMiddleWare {
 
@@ -29,28 +29,65 @@ public class DatabaseMiddleWare {
         //em.close();
     }
 
-    public  List<CapteurdataEntity> getCapteurDataByCapteurId(int capteur_id){
+    public HashMap<CapteurDataType, Integer> getSeuilCapteurs(){
+        HashMap<CapteurDataType, Integer> result = new HashMap<>();
+
+        beginTransaction();
+        List<SeuilCapteursEntity>  seuilCapteursEntities= em.createQuery("SELECT p FROM SeuilCapteursEntity p").getResultList();
+
+        for(SeuilCapteursEntity seuilCapteursEntity : seuilCapteursEntities){
+            result.put(parseStringForCapteurDataType(seuilCapteursEntity.getType()), seuilCapteursEntity.getValue());
+        }
+        endTransaction();
+        return result;
+    }
+
+
+
+    private CapteurDataType parseStringForCapteurDataType(String type) {
+        switch (type){
+            case "HUMIDITE" : return CapteurDataType.HUMIDITE;
+            case "TEMPERATURE" : return CapteurDataType.TEMPERATURE;
+            case "VITESSE_VENT" : return CapteurDataType.VITESSE_VENT;
+            case "PRESSION" : return CapteurDataType.PRESSION;
+            default: return CapteurDataType.HUMIDITE;
+        }
+    }
+
+    public void setSeuilCapteurs (HashMap<CapteurDataType, Integer> newSeuilCapteurs){
+        for(CapteurDataType capteurDataType : newSeuilCapteurs.keySet()){
+            beginTransaction();
+            Query query = em.createQuery("UPDATE SeuilCapteursEntity set value = :newvalue " + "where type = :typee");
+            query.setParameter("newvalue", newSeuilCapteurs.get(capteurDataType) );
+            query.setParameter("typee", capteurDataType.toString() );
+            endTransaction();
+        }
+    }
+
+    public  List<CapteurdataEntity> getCapteurDataByCapteurId(int capteur_id, long minTime){
         List<CapteurdataEntity> capteurdatas = new ArrayList<>();
 
         beginTransaction();
-        capteurdatas = em.createQuery("SELECT p FROM CapteurdataEntity p where p.idCapteur =" + String.valueOf(capteur_id)).getResultList();
+        capteurdatas = em.createQuery("SELECT p FROM CapteurdataEntity p WHERE p.idCapteur =" +
+                String.valueOf(capteur_id) + " AND p.timestamp>FROM_UNIXTIME("+minTime+")").getResultList();
 
        endTransaction();
        return capteurdatas;
     }
 
-    public Capteur2 getCapteur2byId(int search_id){
+    public Capteur2 getCapteur2byId(int search_id, long minTime){
 
         Capteur2 result = null;
 
         beginTransaction();
 
-        List<CapteurEntity> capteurs =  em.createQuery("SELECT p FROM CapteurEntity p where p.id =" + String.valueOf(search_id)).getResultList();
+        List<CapteurEntity> capteurs =  em.createQuery("SELECT p FROM CapteurEntity p WHERE p.id =" + String.valueOf(search_id)).getResultList();
         if(capteurs.size() != 1){
             endTransaction();
             return result;
         }else{
             CapteurEntity capteurEntity = capteurs.get(0);
+
             endTransaction();
 
             beginTransaction();
@@ -74,7 +111,7 @@ public class DatabaseMiddleWare {
 
             endTransaction();
 
-            result = new Capteur2(capteurEntity,paysEntity,villeEntity);
+            result = new Capteur2(capteurEntity,paysEntity,villeEntity, minTime);
         }
 
         return result;
@@ -83,22 +120,35 @@ public class DatabaseMiddleWare {
     public List<Capteur2> getCapteur2byIds(List<Integer> ids){
         List<Capteur2> result= new ArrayList<>();
         for(Integer id : ids){
-            result.add(getCapteur2byId(id));
+            result.add(getCapteur2byId(id, 0));
         }
         return result;
     }
 
-    public List<Capteur2> getAllCapteur2(){
 
+    public List<Capteur2> getAllCapteur2(long minTime){
         List<Capteur2> result= new ArrayList<>();
-
 
         beginTransaction();
         List<CapteurEntity> capteurs = em.createQuery("SELECT p FROM CapteurEntity p").getResultList();
         endTransaction();
 
         for(CapteurEntity capteurEntity :capteurs){
-            result.add(getCapteur2byId(capteurEntity.getId()));
+            result.add(getCapteur2byId(capteurEntity.getId(), minTime));
+        }
+
+        return result;
+    }
+
+    public List<Capteur2> getCapteur2Alert(long minTime){
+        List<Capteur2> result= new ArrayList<>();
+
+        beginTransaction();
+        List<CapteurEntity> capteurs = em.createQuery("SELECT p FROM CapteurEntity p").getResultList();
+        endTransaction();
+
+        for(CapteurEntity capteurEntity :capteurs){
+            result.add(getCapteur2byId(capteurEntity.getId(), minTime));
         }
 
         return result;
@@ -118,8 +168,36 @@ public class DatabaseMiddleWare {
         return false;
     }
 
+    public List<CapteurdataEntity> getCapteurDataFromDate(int id, Timestamp time) {
+
+        beginTransaction();
+//        List<CapteurdataEntity> returnValue = em.createQuery("SELECT e FROM CapteurdataEntity e WHERE e.idCapteur = " + id + " AND e.timestamp.fastTime >= " + time).getResultList();
+        Query q;
+
+        if(id == -1){
+            q = em.createQuery("SELECT e FROM CapteurdataEntity e");
+            q.setMaxResults(1);
+        }
+        else{
+            q = em.createQuery("SELECT e FROM CapteurdataEntity e WHERE e.idCapteur = :id AND e.timestamp >= :time");
+            q.setParameter("time", time);
+            q.setParameter("id", id);
+        }
+
+        List<CapteurdataEntity> returnValue = q.getResultList();
+
+        endTransaction();
+
+        Collections.sort(returnValue, new Comparator<CapteurdataEntity>() {
+            public int compare(CapteurdataEntity arg0, CapteurdataEntity arg1) {
+                return arg0.getTimestamp().before(arg1.getTimestamp()) ? -1 : 1;
+            }});
+        return returnValue;
+    }
+
     public List<Capteur2> getAllCapteurByResearchBar(ArrayList<String> ids_result, ArrayList<String> tags_result, ArrayList<String> types_result) {
         List<Capteur2> result= new ArrayList<>();
+
 
         /*To test :     */
 
@@ -146,10 +224,12 @@ public class DatabaseMiddleWare {
         boolean allTags = tags_result.get(0).equals("all");
         boolean allTypes = types_result.get(0).equals("all");
 
+
+
         if(allIds){
             if(allTags){
                 if(allTypes){
-                    result = getAllCapteur2();
+                    result = getAllCapteur2(0);
                 }else{
                     result = filterByTypes(types_result);
                 }
@@ -175,6 +255,8 @@ public class DatabaseMiddleWare {
                 }
             }
         }
+
+
         return result;
     }
 
@@ -214,7 +296,7 @@ public class DatabaseMiddleWare {
 
     private List<Capteur2> filterByTypesAndTags(ArrayList<String> types_result, ArrayList<String> tags_result) {
         List<Capteur2> result= new ArrayList<>();
-        result = getAllCapteur2();
+        result = getAllCapteur2(0);
 
         filterListByTags(tags_result, result);
         filterListByTypes(types_result,result);
@@ -225,7 +307,7 @@ public class DatabaseMiddleWare {
 
     private List<Capteur2> filterByTags(ArrayList<String> tags_result) {
         List<Capteur2> result= new ArrayList<>();
-        result = getAllCapteur2();
+        result = getAllCapteur2(0);
 
         filterListByTags(tags_result, result);
         return result;
@@ -252,7 +334,7 @@ public class DatabaseMiddleWare {
 
     private List<Capteur2> filterByTypes(ArrayList<String> types_result) {
         List<Capteur2> result= new ArrayList<>();
-        result = getAllCapteur2();
+        result = getAllCapteur2(0);
 
         filterListByTypes(types_result, result);
         return result;

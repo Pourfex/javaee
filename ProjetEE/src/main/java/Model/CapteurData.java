@@ -8,10 +8,14 @@ public class CapteurData {
     private CapteurDataType type;
     private double value;
     private Timestamp timestamp;
+    private long date;
+    private int id;
 
     public CapteurData(CapteurdataEntity capteurdataEntity){
         this.gps = capteurdataEntity.getGps();
         this.timestamp = capteurdataEntity.getTimestamp();
+        this.date = timestamp.getTime();
+        this.id = capteurdataEntity.getIdCapteur();
         this.value = capteurdataEntity.getValue();
         switch (capteurdataEntity.getType()){
             case 1: this.type = CapteurDataType.TEMPERATURE; break;
@@ -51,5 +55,21 @@ public class CapteurData {
 
     public void setTimestamp(Timestamp timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public long getDate() {
+        return date;
+    }
+
+    public void setDate(long date) {
+        this.date = date;
     }
 }

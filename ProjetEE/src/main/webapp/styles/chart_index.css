@@ -1,0 +1,46 @@
+.charts > * {
+    margin: auto;
+}
+
+.chart_title{
+    font-size: 1.2em;
+    padding-left: 25px;
+}
+
+#chart_list {
+    list-style-type: none;
+}
+
+#chart_list li {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    margin: 25px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.chart_canvas{
+    height: 300px;
+}
+
+
+.chart_info{
+    height: 300px;
+}
+
+
+.chart_info h3 {
+    font-size: 1.4em;
+    font-family: Roboto, Helvetica, sans-serif, Arial;
+}
+
+.chart_info a {
+    font-size: 1.3em;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+

@@ -1,0 +1,41 @@
+
+<!-- STYLESHEETS -->
+
+<!-- Bootstrap Core CSS -->
+<link href="libs/bootstrap.css" rel="stylesheet">
+
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!-- Others -->
+<link rel="stylesheet" type="text/css" href="styles/header.css">
+<link rel="stylesheet" type="text/css" href="styles/footer.css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link rel="stylesheet" type="text/css" href="styles/chart_index.css">
+<link rel="stylesheet" type="text/css" href="styles/spinner.css">
+<link rel="stylesheet" type="text/css" href="styles/snackbar.css">
+
+<!-- Custom CSS -->
+<link href="styles/sb-admin-2.css" rel="stylesheet">
+
+<link href="libs/font-awesome/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<!-- SCRIPTS -->
+
+<!-- JQuery -->
+<script src="libs/jquery-3.3.1.min.js"></script>
+
+<!-- Moment -->
+<script src="libs/moment.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="libs/bootstrap.js"></script>
+
+<!-- Chart Js -->
+<script src="libs/Chart.min.js"></script>
+
+<!-- Others -->
+<script src="scripts/script_index.js"></script>
+<script src="scripts/script_chart.js"></script>

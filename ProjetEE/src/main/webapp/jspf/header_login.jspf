@@ -1,0 +1,8 @@
+<a href="${pageContext.request.contextPath}/" id="header_link">
+    <div id="logo">
+        <img alt="logo" src="ressources/spy.png"/>
+    </div>
+    <h1 id="header_title">
+        SEVESO Capteur
+    </h1>
+</a>

@@ -18,21 +18,23 @@ public class LoginServlet extends HttpServlet {
         public static final String ATT_USER = "user";
         public static final String ATT_FORM = "form";
         public static final String VUE_LOGIN = "/WEB-INF/login.jsp";
-        public static final String SERVLET_HOME = "/home";
+        public static final String SERVLET_HOME = "/WEB-INF/home";
 
 
         public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
-
+            this.getServletContext().getRequestDispatcher( VUE_LOGIN ).forward( request, response );
+            /*
             if(request.getSession(false) == null){
-                /* Affichage de la page de connexion */
+
                 this.getServletContext().getRequestDispatcher( VUE_LOGIN ).forward( request, response );
             }else if(request.getSession(false).getAttribute("username") == null){
-                /* Affichage de la page de connexion */
+
                 this.getServletContext().getRequestDispatcher( VUE_LOGIN ).forward( request, response );
             }else{
                 this.getServletContext().getRequestDispatcher(SERVLET_HOME).forward(request,response);
                 //TODO
             }
+            */
 
 
         }
@@ -47,10 +49,14 @@ public class LoginServlet extends HttpServlet {
                 /* Appel au traitement et à la validation de la requête, et récupération du bean en résultant */
                 User user = form.getUser(request);
 
+
                 if(user.isCorrect() && form.getErrors().isEmpty()){
+
                     request.getSession(true);
                     request.getSession().setAttribute("username", request.getParameter("username"));
-                    this.getServletContext().getRequestDispatcher(SERVLET_HOME).forward(request,response);
+
+                    response.sendRedirect(request.getContextPath()+"/" );
+                    //this.getServletContext().getRequestDispatcher(SERVLET_HOME).forward(request,response);
                    //TODO
                 }else{
                     request.getSession().invalidate(); //TODO Useless ?

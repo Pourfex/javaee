@@ -1,0 +1,20 @@
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<a href="${pageContext.request.contextPath}/" id="header_link">
+<div id="logo">
+    <img alt="logo" src="ressources/spy.png"/>
+</div>
+<h1 id="header_title">
+    SEVESO Capteur
+</h1>
+</a>
+<a id="btn_logout" class="btn btn-link" href="${pageContext.request.contextPath}/logout" role="button">Se déconnecter</a>
+
+<nav class="navigation">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="${pageContext.request.contextPath}/">Accueil <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="${pageContext.request.contextPath}/capteur?id=1">Capteurs</a>
+            <a class="nav-item nav-link active_menu" href="${pageContext.request.contextPath}/settings">Paramètres</a>
+        </div>
+    </div>
+</nav>

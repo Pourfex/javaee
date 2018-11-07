@@ -10,14 +10,16 @@ public class Capteur2 {
 
     private String ville;
     private String pays;
+    private String nom;
     private List<CapteurData> data;
     private CapteurTags tag;
 
 
-    public Capteur2(CapteurEntity capteurEntity, PaysEntity paysEntity, VilleEntity villeEntity) {
+    public Capteur2(CapteurEntity capteurEntity, PaysEntity paysEntity, VilleEntity villeEntity, long minTime) {
        this.ville = villeEntity.getVille();
        this.pays = paysEntity.getPays();
-       this.data = createCapteurDatas(capteurEntity.getId());
+       this.nom = capteurEntity.getNom();
+       this.data = createCapteurDatas(capteurEntity.getId(), minTime);
        this.tag = createRandomTag();
     }
 
@@ -33,11 +35,11 @@ public class Capteur2 {
         }
     }
 
-    private List<CapteurData> createCapteurDatas(int id) {
+    private List<CapteurData> createCapteurDatas(int id, long minTime) {
         List<CapteurData> result = new ArrayList<>();
 
         DatabaseMiddleWare databaseMiddleWare = new DatabaseMiddleWare();
-        List<CapteurdataEntity> resultToMap = databaseMiddleWare.getCapteurDataByCapteurId(id);
+        List<CapteurdataEntity> resultToMap = databaseMiddleWare.getCapteurDataByCapteurId(id, minTime);
         for(CapteurdataEntity capteurdataEntity : resultToMap){
             result.add(new CapteurData(capteurdataEntity));
         }
@@ -75,5 +77,13 @@ public class Capteur2 {
 
     public void setTag(CapteurTags tag) {
         this.tag = tag;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 }

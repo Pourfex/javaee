@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("/home")
+@WebServlet("")
 public class HomeServlet extends HttpServlet {
 
     public static final String ATT_CAPTEURS = "capteurs";
@@ -24,6 +24,23 @@ public class HomeServlet extends HttpServlet {
     public static final String ATT_REQUEST_TYPES = "types";
     public static final String ATT_REGEX = "g";
 
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //System.out.println("Do get "+req.getRequestURI());
+        process(req,resp);
+    }
+
+    private void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.getServletContext().getRequestDispatcher( "/WEB-INF/index.jsp" ).forward( request, response );
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //process(req,resp);
+    }
+
+    /*
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         process(req,resp);
@@ -38,7 +55,7 @@ public class HomeServlet extends HttpServlet {
             }else{
                 giveAllCapteurs(request);
                 giveResearchBarCapteurs(request);
-                /*Affiche page de login */
+
                 this.getServletContext().getRequestDispatcher( VUE_ACCEUIL ).forward( request, response );
             }
         }
@@ -80,21 +97,8 @@ public class HomeServlet extends HttpServlet {
     private void giveAllCapteurs(HttpServletRequest request) {
         DatabaseMiddleWare databaseMiddleWare = new DatabaseMiddleWare();
 
-        //////// GET CAPTEUR BY ID EXEMPLE /////////////
-                /*String toto = databaseMiddleWare.getAll().toString();
-                request.setAttribute( "toto", toto);
-
-                Capteur2 capteur2 = databaseMiddleWare.getCapteur2byId(1);
-                request.setAttribute("capteur2", capteur2);*/
-
-        //////// GET CAPTEUR BY IDs EXEMPLE /////////////
-                /*ArrayList<Integer> ids = new ArrayList<>();
-                ids.add(1);
-                ids.add(2);
-                List<Capteur2> capteur2s = databaseMiddleWare.getCapteur2byIds(ids);
-                request.setAttribute("capteur2s", capteur2s);*/
-
         List<Capteur2> capteur2ss = databaseMiddleWare.getAllCapteur2();
         request.setAttribute(ATT_CAPTEURS,  capteur2ss);
     }
+    */
 }
