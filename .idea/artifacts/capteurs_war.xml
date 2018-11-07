@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="capteurs:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="capteurs-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="capteurs:war exploded" />
+    </root>
+  </artifact>
+</component>
