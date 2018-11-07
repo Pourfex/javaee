@@ -6,8 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1" isELIgnored="false"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8" isELIgnored="false"%>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%--@ page session="true" --%>
@@ -15,13 +15,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="This is the login page for ">
 <meta name="author" content="Alexis Delforges">
 
-<title>Info Capteur n° <%=request.getParameter("id")%> - ${type}</title>
+<title>Info Capteur nÂ° <%=request.getParameter("id")%> - ${type}</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
 
 <body>
 
-	<div>Données du capteur n° <%=request.getParameter("id")%></div>
+	<div>DonnÃ©es du capteur nÂ° <%=request.getParameter("id")%></div>
 	<div>Mesure de ${type}</div>
 
 	<div class="cols-sm-10">
@@ -68,6 +68,11 @@
 
 	<!-- Metis Menu Plugin JavaScript -->
 	<script src="../vendor/metisMenu/metisMenu.min.js"></script>
+		
+	<!-- Moment.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/fr.js"></script>
 
 	<!-- Chart.js -->
 	<script
@@ -75,6 +80,7 @@
 
 	<!-- Custom Theme JavaScript -->
 	<script src="../dist/js/sb-admin-2.js"></script>
+	
 
 	<script>
 		var ctx = document.getElementById('myChart').getContext('2d');
@@ -82,7 +88,7 @@
 		var labels = new Array();
 
 		<c:forEach items="${timestamps}" var="timestamp" varStatus="status">
-		labels.push("${timestamp}");
+		labels.push(new Date("${timestamp}".replace(/-/g, '/')));
 		</c:forEach>
 		
 		Chart.pluginService.register({
@@ -108,7 +114,6 @@
 		});
 
 		var chart = new Chart(ctx, {
-			// Th
 			type : 'line',
 
 			// The data for our dataset
@@ -119,7 +124,7 @@
 					backgroundColor : 'rgb(160, 255, 201, 0.3)',
 					borderColor : 'rgb(66, 206, 126)',
 					data : values,
-					pointRadius: 8,
+					pointRadius: 3,
 					pointHoverRadius: 16
 				} ]
 			},
@@ -134,8 +139,16 @@
 						ticks : {
 							beginAtZero : false
 						}
-					} ]
+					} ],
+					xAxes: [{
+		                type: 'time',
+		                time: {
+		                    unit: '<%=request.getParameter("span")%>',
+		                    min: new Date("${begindate}")
+		                }
+		            }]
 				}
+			
 			}
 		});
 		chart.data.datasets[0].data.forEach(function(point) {

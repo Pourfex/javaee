@@ -22,6 +22,7 @@ public class CapteurServlet extends HttpServlet {
 	public static final String VUE_NO_CAPTEUR = "/WEB-INF/nocapteurspecified.jsp";
 	public static final String TIMESTAMPS = "timestamps";
 	public static final String VALUES = "values";
+	public static final String BEGINDATE = "begindate";
 	public static final String TYPE = "type";
 
 	@Override
@@ -87,6 +88,8 @@ public class CapteurServlet extends HttpServlet {
 		} else {
 			type = "";
 		}
+		
+		req.setAttribute(BEGINDATE, new Timestamp(System.currentTimeMillis() - offset).toString());
 
 		req.setAttribute(TYPE, type);
 
